@@ -41,6 +41,7 @@ const defaultRatings = {
   'Synthesia':         [8, 8, 8, 5, 7],
   'HeyGen':            [8, 8, 8, 6, 7],
   'Higgsfield':        [8, 9, 9, 7, 8],
+  'Magic Hour':        [8, 8, 8, 7, 8],
   'Luma AI':           [7, 9, 9, 7, 7],
   'Hailuo AI (Minimax)': [8, 9, 8, 8, 8],
   'Genmo':             [7, 8, 7, 8, 7],
@@ -178,6 +179,7 @@ const categories = [
       { name: 'Synthesia', desc: 'ساخت ویدیوهای آموزشی و تجاری با آواتارهای سخنگو', icon: '🧑‍💼', pricing: 'paid', level: 'pro', url: 'https://synthesia.io', features: ['آواتارهای بسیار طبیعی', 'پشتیبانی از ۱۲۰+ زبان', 'بدون نیاز به دوربین'] },
       { name: 'HeyGen', desc: 'ترجمه ویدیو با دوبله و لیپ‌سینک دقیق همزمان با صدای خودتان', icon: '👋', pricing: 'paid', level: 'beginner', url: 'https://heygen.com', features: ['ترجمه ویدیو با تغییر لب', 'کلون دقیق صدا', 'ساخت آواتار شخصی'] },
       { name: 'Higgsfield', desc: 'پلتفرم ویدیو و جلوه‌های ویژه سینمایی با کنترل دوربین پیشرفته', icon: '🎬', pricing: 'freemium', level: 'beginner', url: 'https://higgsfield.ai', features: ['حرکات دوربین هالیوودی', 'انیمیت کاراکتر', 'خروجی واقع‌گرایانه'] },
+      { name: 'Magic Hour', desc: 'ساخت و تدوین ویدیو با متن، تصویر، تعویض چهره و لیپ‌سینک هوشمند', icon: '✨', pricing: 'freemium', level: 'beginner', url: 'https://magichour.ai', features: ['تولید ویدیو از متن و عکس', 'تعویض چهره (Face Swap)', 'هماهنگ‌سازی لب (Lip Sync)'] },
       { name: 'Luma AI', desc: 'تولید ویدیوهای سینمایی با Dream Machine و اسکن سه‌بعدی', icon: '🌐', pricing: 'freemium', level: 'pro', url: 'https://lumalabs.ai', features: ['Dream Machine سریع', 'اسکن سه‌بعدی NeRF', 'حرکت دوربین روان'] },
       { name: 'Hailuo AI (Minimax)', desc: 'مدل ویدیویی فوق‌العاده با جزئیات چهره و حرکت دینامیک', icon: '🎥', pricing: 'freemium', level: 'pro', url: 'https://hailuoai.video', features: ['کیفیت سینمایی شگفت‌انگیز', 'حرکت نرم بدون تاری', 'تولید سریع'] },
       { name: 'Genmo', desc: 'پلتفرم خلاقانه تولید ویدیوی متن به تصویر با مدل Mochi', icon: '✨', pricing: 'freemium', level: 'beginner', url: 'https://genmo.ai', features: ['مدل متن‌باز Mochi', 'حرکات روان', 'رایگان در شروع'] }
