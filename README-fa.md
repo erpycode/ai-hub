@@ -30,14 +30,14 @@
 
 | امکان | توضیح |
 |:------|:------|
-| 🎯 **۱۰ دسته‌بندی** | بیش از ۶۵+ ابزار هوش مصنوعی |
+| 🎯 **۱۱ دسته‌بندی** | بیش از ۹۵+ ابزار هوش مصنوعی معتبر و دسته‌بندی شده |
 | ⚖️ **مقایسه هوشمند** | مقایسه دوتا ابزار کنار هم |
 | 📚 **آموزش نصب** | راهنمای قدم‌به‌قدم برای ایجنت‌های حرفه‌ای |
 | ⭐ **علاقه‌مندی‌ها** | ذخیره ابزارهای مورد علاقه (لوکال) |
 | 🔍 **فیلتر پیشرفته** | فیلتر بر اساس دسته، قیمت و سطح |
 | ⌨️ **کلیدهای میانبر** | ناوبری سریع با کیبورد |
 | 📱 **PWA** | قابل نصب روی گوشی مثل اپلیکیشن |
-| 🌙 **تم تاریک** | راحت برای چشم |
+| 🌙 **تم تاریک** | راحت برای چشم با دیزاین وایب‌فارسی |
 | 🔢 **اعداد فارسی** | فارسی‌سازی کامل |
 
 ---
@@ -46,16 +46,17 @@
 
 | دسته | ابزارها | توضیح |
 |:-----|:--------|:------|
-| 🖥️ **کدنویسی** | ۸ | GitHub Copilot, Cursor, Claude Code, ChatGPT |
-| 🎨 **تولید عکس** | ۷ | Midjourney, DALL-E 3, Stable Diffusion, Flux |
-| 🎬 **ساخت ویدیو** | ۸ | Runway ML, Sora, Kling, Higgsfield |
-| 🎵 **صدا و موزیک** | ۶ | ElevenLabs, Suno, Udio |
-| ✍️ **نوشتن** | ۶ | ChatGPT, Claude, Gemini, Grammarly |
-| 📊 **تحلیل داده** | ۵ | Julius AI, NotebookLM, Claude Projects |
-| 🤖 **ایجنت و اتوماسیون** | ۶ | AutoGPT, CrewAI, n8n, Make |
-| 🔍 **جستجوی هوشمند** | ۵ | Perplexity, Phind, Kagi |
-| 🏗️ **پلتفرم مدل** | ۸ | Hugging Face, LM Arena, Ollama, Groq |
-| 🛠️ **ایجنت‌های حرفه‌ای** | ۵ | Hermes Agent, 9Router, Claude Code, Codex, Aider |
+| 🖥️ **کدنویسی** | ۱۲ | Cursor, Windsurf, Copilot, Supermaven, Tabnine, DeepSeek |
+| 🎨 **تولید عکس** | ۱۱ | Midjourney, DALL-E 3, Stable Diffusion, Flux, Ideogram |
+| 🎬 **ساخت ویدیو** | ۱۱ | Runway ML, Kling, Sora, Hailuo AI, Higgsfield, Pika |
+| 🎵 **صدا و موزیک** | ۹ | ElevenLabs, Suno, Udio, Bark, AIVA, Murf AI |
+| ✍️ **نوشتن** | ۸ | Claude, ChatGPT, Gemini, Grammarly, Jasper |
+| 📊 **تحلیل داده** | ۶ | Julius AI, NotebookLM, Rows.com, Hex, PandasAI |
+| 🤖 **ایجنت و اتوماسیون** | ۹ | AutoGPT, CrewAI, n8n, Make, Dify, LangChain |
+| 🔍 **جستجوی هوشمند** | ۷ | Perplexity, Phind, Genspark, Exa.ai, Kagi |
+| 🏗️ **پلتفرم مدل** | ۱۱ | Google AI Studio, Hugging Face, LM Arena, Ollama, Groq |
+| 🛠️ **ایجنت‌های حرفه‌ای** | ۵ | Hermes Agent, 9Router, Claude Code, Cline, Aider |
+| 💎 **گنج‌های پنهان** | ۶ | v0.dev, Bolt.new, Pinokio, Upscayl, Krea AI, Whisper WebGPU |
 
 </div>
 

@@ -40,16 +40,17 @@
 
 | Category | Tools | Description |
 |----------|-------|-------------|
-| 🖥️ **Coding** | 8 | GitHub Copilot, Cursor, Claude Code, ChatGPT, and more |
-| 🎨 **Image Generation** | 7 | Midjourney, DALL-E 3, Stable Diffusion, Flux |
-| 🎬 **Video Creation** | 8 | Runway ML, Sora, Kling, Higgsfield, and more |
-| 🎵 **Audio & Music** | 6 | ElevenLabs, Suno, Udio, and more |
-| ✍️ **Writing** | 6 | ChatGPT, Claude, Gemini, Grammarly |
-| 📊 **Data Analysis** | 5 | Julius AI, NotebookLM, Claude Projects |
-| 🤖 **Agents & Automation** | 6 | AutoGPT, CrewAI, n8n, Make |
-| 🔍 **Smart Search** | 5 | Perplexity, Phind, Kagi |
-| 🏗️ **Model Platforms** | 8 | Hugging Face, LM Arena, Ollama, Groq |
-| 🛠️ **Pro Agents & CLI** | 5 | Hermes Agent, 9Router, Claude Code, Codex, Aider |
+| 🖥️ **Coding** | 12 | Cursor, Windsurf, Copilot, Supermaven, Tabnine, DeepSeek |
+| 🎨 **Image Generation** | 11 | Midjourney, DALL-E 3, Stable Diffusion, Flux, Ideogram |
+| 🎬 **Video Creation** | 11 | Runway ML, Kling, Sora, Hailuo AI, Higgsfield, Pika |
+| 🎵 **Audio & Music** | 9 | ElevenLabs, Suno, Udio, Bark, AIVA, Murf AI |
+| ✍️ **Writing** | 8 | Claude, ChatGPT, Gemini, Grammarly, Jasper |
+| 📊 **Data Analysis** | 6 | Julius AI, NotebookLM, Rows.com, Hex, PandasAI |
+| 🤖 **Agents & Automation** | 9 | AutoGPT, CrewAI, n8n, Make, Dify, LangChain |
+| 🔍 **Smart Search** | 7 | Perplexity, Phind, Genspark, Exa.ai, Kagi |
+| 🏗️ **Model Platforms** | 11 | Google AI Studio, Hugging Face, LM Arena, Ollama, Groq |
+| 🛠️ **Pro Agents & CLI** | 5 | Hermes Agent, 9Router, Claude Code, Cline, Aider |
+| 💎 **Hidden Gems** | 6 | v0.dev, Bolt.new, Pinokio, Upscayl, Krea AI, Whisper WebGPU |
 
 ---
 
