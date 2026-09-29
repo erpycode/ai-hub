@@ -30,7 +30,7 @@
 
 | امکان | توضیح |
 |:------|:------|
-| 🎯 **۱۱ دسته‌بندی** | بیش از ۹۵+ ابزار هوش مصنوعی معتبر و دسته‌بندی شده |
+| 🎯 **۱۲ دسته‌بندی** | بیش از ۱۰۰ ابزار هوش مصنوعی معتبر و دسته‌بندی شده |
 | ⚖️ **مقایسه هوشمند** | مقایسه دوتا ابزار کنار هم |
 | 📚 **آموزش نصب** | راهنمای قدم‌به‌قدم برای ایجنت‌های حرفه‌ای |
 | ⭐ **علاقه‌مندی‌ها** | ذخیره ابزارهای مورد علاقه (لوکال) |
@@ -46,9 +46,10 @@
 
 | دسته | ابزارها | توضیح |
 |:-----|:--------|:------|
+| 🇮🇷 **سرویس‌های ایرانی** | ۳ | بنانا AI, هوشا, نقطه (دسترسی بدون تحریم با کارت شتاب) |
 | 🖥️ **کدنویسی** | ۱۲ | Cursor, Windsurf, Copilot, Supermaven, Tabnine, DeepSeek |
 | 🎨 **تولید عکس** | ۱۱ | Midjourney, DALL-E 3, Stable Diffusion, Flux, Ideogram |
-| 🎬 **ساخت ویدیو** | ۱۱ | Runway ML, Kling, Sora, Hailuo AI, Higgsfield, Pika |
+| 🎬 **ساخت ویدیو** | ۱۲ | Runway ML, Kling, Sora, Hailuo AI, Magic Hour, Pika |
 | 🎵 **صدا و موزیک** | ۹ | ElevenLabs, Suno, Udio, Bark, AIVA, Murf AI |
 | ✍️ **نوشتن** | ۸ | Claude, ChatGPT, Gemini, Grammarly, Jasper |
 | 📊 **تحلیل داده** | ۶ | Julius AI, NotebookLM, Rows.com, Hex, PandasAI |

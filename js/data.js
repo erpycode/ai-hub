@@ -4,6 +4,11 @@
 
 // Ratings: easeOfUse, quality, features, priceValue, speed (1-10)
 const defaultRatings = {
+  // ─── Iranian AI Hubs (Shetab Payment / No Filter) ───
+  'بنانا AI':          [9, 8, 8, 7, 8],
+  'هوشا':              [9, 9, 9, 8, 8],
+  'نقطه':              [8, 9, 9, 8, 8],
+
   // ─── Coding ───
   'GitHub Copilot':    [7, 9, 9, 6, 9],
   'Cursor':            [8, 9, 9, 7, 8],
@@ -126,6 +131,42 @@ const defaultRatings = {
 const ratingLabels = ['سادگی', 'کیفیت', 'امکانات', 'ارزش قیمت', 'سرعت'];
 
 const categories = [
+  {
+    id: 'iranian',
+    emoji: '🇮🇷',
+    name: 'سرویس‌های جامع ایرانی (پرداخت شتاب)',
+    desc: 'پلتفرم‌های تجمیع‌کننده برتر هوش مصنوعی در ایران — دسترسی به همه مدل‌های جهانی (متن، عکس، ویدیو) با یک اشتراک و پرداخت کارت شتاب بدون تحریم',
+    isVip: true,
+    tools: [
+      {
+        name: 'بنانا AI',
+        desc: 'پلتفرم تجمیع مدل‌های تصویر، ویدیو و چت هوش مصنوعی با خرید اعتبار ریالی',
+        icon: '🍌',
+        pricing: 'paid',
+        level: 'beginner',
+        url: 'https://bananaai.ir',
+        features: ['تولید عکس و ویدیو با AI', 'مدل‌های زبانی چت', 'پرداخت با کارت شتاب', 'بدون نیاز به ابزار تغییر IP']
+      },
+      {
+        name: 'هوشا',
+        desc: 'پلتفرم همه‌کاره دسترسی به مدل‌های پیشرفته GPT-4o, Claude, Midjourney و ساخت ویدیو',
+        icon: '🦉',
+        pricing: 'freemium',
+        level: 'beginner',
+        url: 'https://hoosha.com',
+        features: ['یک اشتراک برای تمام مدل‌ها', 'رابط کاربری کاملاً فارسی', 'دسترسی سریع بدون تحریم', 'پشتیبانی از کارت‌های عضو شتاب']
+      },
+      {
+        name: 'نقطه',
+        desc: 'دستیار یکپارچه هوش مصنوعی برای تولید محتوا، برنامه‌نویسی، طراحی و کارهای تخصصی',
+        icon: '🔴',
+        pricing: 'freemium',
+        level: 'pro',
+        url: 'https://noqte.ai',
+        features: ['ورک‌فلوهای چندمرحله‌ای پروژه', 'دستیارهای تخصصی کدنویسی', 'تولید محتوا و ویدیو', 'پرداخت با کارت بانکی ایران']
+      }
+    ]
+  },
   {
     id: 'coding',
     emoji: '🖥️',
@@ -367,6 +408,7 @@ const categories = [
 // ═══════════════════════════════════════════
 const wizardData = {
   tasks: [
+    { id: 'iranian', label: '🇮🇷 سرویس‌های ایرانی (پرداخت شتاب)', category: 'iranian' },
     { id: 'coding', label: '🖥️ کدنویسی', category: 'coding' },
     { id: 'image', label: '🎨 طراحی عکس', category: 'image' },
     { id: 'video', label: '🎬 ساخت ویدیو', category: 'video' },
@@ -394,6 +436,27 @@ const wizardData = {
 // ═══════════════════════════════════════════
 
 const roadmapData = {
+  iranian: {
+    beginner: {
+      free: [
+        { step: 1, title: 'شروع با هوشا', icon: '🦉', desc: 'تست رایگان اولیه مدل‌های برتر دنیا بدون فیلترشکن', tool: 'هوشا', url: 'https://hoosha.com', tip: 'ثبت‌نام سریع با شماره موبایل ایران' },
+        { step: 2, title: 'تولید محتوا در نقطه', icon: '🔴', desc: 'دسترسی به دستیارهای آماده فارسی', tool: 'نقطه', url: 'https://noqte.ai', tip: 'ایده‌آل برای تولید مقاله و تصویر' }
+      ],
+      any: [
+        { step: 1, title: 'اشتراک همه‌کاره هوشا', icon: '🦉', desc: 'دسترسی یکپارچه به ChatGPT، Claude و Midjourney با کارت شتاب', tool: 'هوشا', url: 'https://hoosha.com', tip: 'صرفه‌جویی عالی به جای خرید اکانت‌های مجزای دلاری' },
+        { step: 2, title: 'خلق چندرسانه‌ای با بنانا AI', icon: '🍌', desc: 'خرید بسته اعتباری برای ساخت ویدیو و عکس با کیفیت بالا', tool: 'بنانا AI', url: 'https://bananaai.ir', tip: 'تولید تصاویر تجاری و رندرهای باکیفیت' }
+      ]
+    },
+    pro: {
+      free: [
+        { step: 1, title: 'فضای کاری نقطه', icon: '🔴', desc: 'مدیریت پروژه‌های چندمرحله‌ای با هوش مصنوعی', tool: 'نقطه', url: 'https://noqte.ai', tip: 'ورک‌فلوهای متوالی از ایده تا خروجی نهایی' }
+      ],
+      any: [
+        { step: 1, title: 'تولید پیشرفته با نقطه Pro', icon: '🔴', desc: 'کدنویسی، طراحی وب و سناریونویسی تخصصی با مدل‌های پرچمدار', tool: 'نقطه', url: 'https://noqte.ai', tip: 'مناسب فریلنسرها، برنامه‌نویسان و تیم‌های محتوایی' },
+        { step: 2, title: 'استودیوی تصویر و ویدیو در بنانا AI', icon: '🍌', desc: 'تولید محتوای مارکتینگ در ابعاد وسیع بدون دغدغه تحریم', tool: 'بنانا AI', url: 'https://bananaai.ir', tip: 'شارژ سریع اعتبار ریالی بدون کارمزد ارزی' }
+      ]
+    }
+  },
   coding: {
     beginner: {
       free: [

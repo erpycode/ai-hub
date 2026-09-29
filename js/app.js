@@ -86,12 +86,13 @@ function renderCategories() {
   const countEl = document.getElementById('categoryCount');
   if (countEl) countEl.textContent = toPersianNum(categories.length) + ' دسته';
   grid.innerHTML = categories.map((cat, i) => `
-    <div class="category-card animate-in" onclick="openCategory('${cat.id}')" style="animation-delay: ${i * 0.05}s">
+    <div class="category-card ${cat.isVip ? 'category-card-vip' : ''} animate-in" onclick="openCategory('${cat.id}')" style="animation-delay: ${i * 0.05}s">
+      ${cat.isVip ? `<div class="vip-badge">⭐ ویژه کاربران داخل ایران • پرداخت مستقیم با کارت شتاب</div>` : ''}
       <span class="category-emoji">${cat.emoji}</span>
       <div class="category-name">${cat.name}</div>
       <div class="category-desc">${cat.desc}</div>
       <div class="category-tools">
-        ${cat.tools.slice(0, 4).map(t => `<span class="tool-tag">${t.name}</span>`).join('')}
+        ${cat.tools.slice(0, 4).map(t => `<span class="tool-tag ${cat.isVip ? 'tool-tag-vip' : ''}">${t.name}</span>`).join('')}
         ${cat.tools.length > 4 ? `<span class="tool-tag">+${toPersianNum(cat.tools.length - 4)}</span>` : ''}
       </div>
     </div>
@@ -114,13 +115,21 @@ function openCategory(catId) {
   document.getElementById('toolsPanelTitle').innerHTML = `${cat.emoji} ${cat.name}`;
 
   const filterBar = document.getElementById('filterBar');
-  filterBar.innerHTML = `
-    <button class="filter-btn active" onclick="filterTools('all', this)">همه</button>
-    <button class="filter-btn" onclick="filterTools('free', this)">رایگان</button>
-    <button class="filter-btn" onclick="filterTools('paid', this)">پولی</button>
-    <button class="filter-btn" onclick="filterTools('beginner', this)">مبتدی</button>
-    <button class="filter-btn" onclick="filterTools('pro', this)">حرفه‌ای</button>
-  `;
+  if (cat.id === 'iranian') {
+    filterBar.innerHTML = `
+      <div class="iranian-notice-banner">
+        💡 <strong>ویژه کاربران داخل کشور:</strong> این پلتفرم‌های برتر تجمیع‌کننده به شما امکان می‌دهند بدون دغدغه تحریم، فیلترینگ یا نیاز به مسترکارت/ویزا، تنها با داشتن یک کارت بانکی عضو شتاب به انواع مدل‌های پیشرو جهانی (چت‌بات‌ها، تولید عکس، ساخت ویدیو و کدنویسی) دسترسی داشته باشید.
+      </div>
+    `;
+  } else {
+    filterBar.innerHTML = `
+      <button class="filter-btn active" onclick="filterTools('all', this)">همه</button>
+      <button class="filter-btn" onclick="filterTools('free', this)">رایگان</button>
+      <button class="filter-btn" onclick="filterTools('paid', this)">پولی</button>
+      <button class="filter-btn" onclick="filterTools('beginner', this)">مبتدی</button>
+      <button class="filter-btn" onclick="filterTools('pro', this)">حرفه‌ای</button>
+    `;
+  }
 
   renderToolsList(cat.tools, 'all');
   document.getElementById('toolsOverlay').classList.add('show');
@@ -202,12 +211,13 @@ function handleSearch(query) {
   }
 
   grid.innerHTML = matched.map((cat, i) => `
-    <div class="category-card animate-in" onclick="openCategory('${cat.id}')" style="animation-delay: ${i * 0.05}s">
+    <div class="category-card ${cat.isVip ? 'category-card-vip' : ''} animate-in" onclick="openCategory('${cat.id}')" style="animation-delay: ${i * 0.05}s">
+      ${cat.isVip ? `<div class="vip-badge">⭐ ویژه کاربران داخل ایران • پرداخت مستقیم با کارت شتاب</div>` : ''}
       <span class="category-emoji">${cat.emoji}</span>
       <div class="category-name">${cat.name}</div>
       <div class="category-desc">${cat.desc}</div>
       <div class="category-tools">
-        ${cat.tools.slice(0, 4).map(t => `<span class="tool-tag">${t.name}</span>`).join('')}
+        ${cat.tools.slice(0, 4).map(t => `<span class="tool-tag ${cat.isVip ? 'tool-tag-vip' : ''}">${t.name}</span>`).join('')}
       </div>
     </div>
   `).join('');
@@ -796,6 +806,7 @@ function renderRoadmapWizard() {
 
   if (roadmapState.step === 1) {
     const catOptions = [
+      { id: 'iranian', label: '🇮🇷 سرویس‌های ایرانی (پرداخت شتاب)', category: 'iranian' },
       { id: 'coding', label: '🖥️ برنامه‌نویسی', category: 'coding' },
       { id: 'image', label: '🎨 طراحی عکس', category: 'image' },
       { id: 'video', label: '🎬 ساخت ویدیو', category: 'video' },
@@ -841,6 +852,7 @@ function showRoadmapResult() {
   }
 
   const catNames = {
+    'iranian': 'سرویس‌های ایرانی (پرداخت شتاب)',
     'coding': 'برنامه‌نویسی', 'image': 'طراحی عکس', 'video': 'ساخت ویدیو',
     'audio': 'صدا و موزیک', 'text': 'نوشتن', 'data': 'تحلیل داده',
     'agents': 'اتوماسیون', 'search': 'جستجو', 'platforms': 'پلتفرم مدل',

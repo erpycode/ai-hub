@@ -428,6 +428,53 @@
       font-weight: 500;
     }
 
+    /* ─── VIP IRANIAN HUBS CARD & BANNER ─── */
+    .category-card-vip {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(20, 20, 26, 0.95) 100%) !important;
+      border: 1px solid rgba(220, 38, 38, 0.4) !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 30px rgba(220, 38, 38, 0.15) !important;
+      position: relative;
+    }
+    .category-card-vip:hover {
+      border-color: var(--brand-light) !important;
+      box-shadow: var(--shadow-lg), 0 0 45px rgba(220, 38, 38, 0.32) !important;
+    }
+    .vip-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #dc2626, #b91c1c);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: var(--radius-xl);
+      margin-bottom: 12px;
+      box-shadow: 0 2px 10px rgba(220, 38, 38, 0.35);
+      width: fit-content;
+    }
+    .tool-tag-vip {
+      background: rgba(220, 38, 38, 0.18) !important;
+      border-color: rgba(220, 38, 38, 0.4) !important;
+      color: #fca5a5 !important;
+      font-weight: 600 !important;
+    }
+    .iranian-notice-banner {
+      width: 100%;
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.12), rgba(20, 20, 26, 0.6));
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .iranian-notice-banner strong {
+      color: #fca5a5;
+    }
+
     /* ─── TOOLS OVERLAY ─── */
     .tools-overlay {
       display: none;

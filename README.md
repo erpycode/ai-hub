@@ -40,9 +40,10 @@
 
 | Category | Tools | Description |
 |----------|-------|-------------|
+| 🇮🇷 **Iranian Platforms** | 3 | Banana AI, Hoosha, Noqte (Unified access with Shetab payment) |
 | 🖥️ **Coding** | 12 | Cursor, Windsurf, Copilot, Supermaven, Tabnine, DeepSeek |
 | 🎨 **Image Generation** | 11 | Midjourney, DALL-E 3, Stable Diffusion, Flux, Ideogram |
-| 🎬 **Video Creation** | 11 | Runway ML, Kling, Sora, Hailuo AI, Higgsfield, Pika |
+| 🎬 **Video Creation** | 12 | Runway ML, Kling, Sora, Hailuo AI, Magic Hour, Pika |
 | 🎵 **Audio & Music** | 9 | ElevenLabs, Suno, Udio, Bark, AIVA, Murf AI |
 | ✍️ **Writing** | 8 | Claude, ChatGPT, Gemini, Grammarly, Jasper |
 | 📊 **Data Analysis** | 6 | Julius AI, NotebookLM, Rows.com, Hex, PandasAI |
