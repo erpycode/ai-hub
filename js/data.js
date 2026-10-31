@@ -240,7 +240,8 @@ const categories = [
       { name: 'Riffusion', desc: 'تولید ریف‌ها و لوپ‌های خلاقانه موسیقی از طریق طیف‌نگار صوتی', icon: '🎸', pricing: 'free', level: 'beginner', url: 'https://riffusion.com', features: ['خلاقانه و نوآورانه', 'تولید فوری لوپ', 'رایگان'] },
       { name: 'Murf AI', desc: 'استودیوی تولید صدای گویندگی و پادکست با تنوع صدای بالا', icon: '🎙️', pricing: 'freemium', level: 'beginner', url: 'https://murf.ai', features: ['صدای گویندگان حرفه‌ای', 'تنظیم تن و زیروبم', 'همگام با ویدیو'] },
       { name: 'WellSaid Labs', desc: 'صداگذاری سازمانی و آموزشگاهی با بالاترین استاندارد شباهت انسانی', icon: '🗣️', pricing: 'paid', level: 'pro', url: 'https://wellsaidlabs.com', features: ['صداهای فوق‌واقعی', 'مناسب نریشن و کتاب صوتی', 'API پایدار'] },
-      { name: 'Soundraw', desc: 'تولید موزیک پس‌زمینه بدون حق کپی‌رایت برای تولیدکنندگان محتوا', icon: '🎶', pricing: 'freemium', level: 'beginner', url: 'https://soundraw.io', features: ['شخصی‌سازی طول و تمپو', 'بدون اخطار کپی‌رایت یوتیوب', 'ادیت بخش‌های آهنگ'] }
+      { name: 'Soundraw', desc: 'تولید موزیک پس‌زمینه بدون حق کپی‌رایت برای تولیدکنندگان محتوا', icon: '🎶', pricing: 'freemium', level: 'beginner', url: 'https://soundraw.io', features: ['شخصی‌سازی طول و تمپو', 'بدون اخطار کپی‌رایت یوتیوب', 'ادیت بخش‌های آهنگ'] },
+      { name: 'Tera Studio', desc: 'شنیدن هر آهنگی با صدای خودتان: حدود یک دقیقه آواز بخوانید تا صدایتان را یاد بگیرد', icon: '🎤', pricing: 'freemium', level: 'beginner', url: 'https://terastudio.co/fa/', features: ['رابط کاربری فارسی', 'آواز به هر زبانی', '۲ آهنگ کامل رایگان در سایت، بدون کارت'] }
     ]
   },
   {
